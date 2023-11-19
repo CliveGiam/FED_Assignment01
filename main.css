@@ -1,0 +1,11 @@
+.siteheader {
+    background-color: #555555;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.headerflex {
+    display: flex;
+    flex-direction: row;
+}
