@@ -1,42 +1,39 @@
 body{
-    background:#222222;
+    background-color:#222222;
     font-family: Arial, Helvetica, sans-serif;
   }
 
 .container {
     display: flex;
     width: 100%;
-    background-color: #222222;
     flex-wrap: wrap;
     flex-direction: column;
 }
-
+/*Header element styling*/
 .site-header{
-    color: #555555;
     height: auto;
     width: 100%;
     display: flex;
-    border: 3px solid #000000;
+    border-bottom: 5px solid #555555;
     flex-direction: row;
     align-self: top;
 }
-
+/*Individual header elements*/
 .header-flex {
     padding: 2%;
     flex-grow: 1;
-    flex-basis: 15%;
     display: flex;
     flex-direction: row;
     align-self: center;
     height: 2vw;
     width: 2vw;
 }
-
+/*Navigation link styling*/
 a {
     color: #FFFFFF;
     font-size: 1.5rem;
 }
-
+/*Social link styling*/
 .header-social {
     display: flex;
     justify-content: center;
@@ -72,17 +69,21 @@ a {
     max-height: 4vw;
     justify-content: center;
 }
-
-.top-img {
+/*Group image styling*/
+figure {
     display: flex;
-    margin-top: auto;
+    flex-direction: row;
     flex-grow: 1;
     flex-basis: 15%;
+    margin-left: 0%;
+    margin-top: 0%;
+    width: 100%;
+    border-bottom: 5px solid #555555;
 }
 
 .band-img {
     display: flex;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 150%;
 }
 
