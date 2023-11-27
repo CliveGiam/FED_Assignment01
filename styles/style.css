@@ -8,6 +8,7 @@ body{
     width: 100%;
     background-color: #222222;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .site-header{
@@ -21,7 +22,7 @@ body{
 }
 
 .header-flex {
-    padding: 3%;
+    padding: 2%;
     flex-grow: 1;
     flex-basis: 15%;
     display: flex;
@@ -70,5 +71,18 @@ a {
     max-width: 4vw;
     max-height: 4vw;
     justify-content: center;
+}
+
+.top-img {
+    display: flex;
+    margin-top: auto;
+    flex-grow: 1;
+    flex-basis: 15%;
+}
+
+.band-img {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
 }
 
