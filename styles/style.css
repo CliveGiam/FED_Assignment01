@@ -27,8 +27,8 @@ body{
     display: flex;
     flex-direction: row;
     align-self: center;
-    height: 4vw;
-    width: 1vw;
+    height: 2vw;
+    width: 2vw;
 }
 
 a {
@@ -38,8 +38,37 @@ a {
 
 .header-social {
     display: flex;
+    justify-content: center;
     flex-shrink: 2;
-    height: 4vw;
-    width: 1vw;
+    height: 2vw;
+    width: 2vw;
     align-self: flex-end;
 }
+
+.yt-icon {
+    display: flex;
+    max-width: 4vw;
+    max-height: 4vw;
+    justify-content: center;
+}
+
+.x-icon {
+    display: flex;
+    max-width: 4vw;
+    max-height: 4vw;
+    justify-content: center;
+}
+.insta-icon {
+    display: flex;
+    max-width: 4vw;
+    max-height: 4vw;
+    justify-content: center;
+}
+
+.fb-icon {
+    display: flex;
+    max-width: 4vw;
+    max-height: 4vw;
+    justify-content: center;
+}
+
