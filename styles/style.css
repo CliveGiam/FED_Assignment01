@@ -105,7 +105,7 @@ article {
     font-size: 1.3rem;
     font-weight: bold;
 }
-
+/*Styling for footer*/
 footer {
     display: flex;  
     flex-direction: row;
