@@ -11,7 +11,7 @@
     }
     /*Header element styling*/
     .site-header{
-        height: auto;
+        height: 100%;
         width: 100%;
         display: flex;
         border-bottom: 5px solid #555555;
@@ -25,20 +25,18 @@
         display: flex;
         flex-direction: row;
         align-self: center;
-        height: 2vw;
         width: 2vw;
     }
     /*Navigation link styling*/
-    a {
+    .nav {
         color: #FFFFFF;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     /*Social link styling*/
     .header-social {
         display: flex;
         justify-content: center;
         flex-shrink: 2;
-        height: 2vw;
         width: 2vw;
         align-self: flex-end;
     }
@@ -91,8 +89,7 @@
         display: flex;  
         background-color: #777777;
         border: 4px solid #555555;
-        height: 5rem;
-        justify-content: flex-start;
+        height: 4rem;
         padding: 2%;
     }
 
