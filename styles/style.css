@@ -180,6 +180,7 @@ img.about-img {
 }
 
 .bio-text {
+    margin-top: 0%;
     font-size: 1.3rem;
     font-weight: bold;
 }
