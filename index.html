@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <script src="/FED_Assignment01/scripts/script.js"></script>
 </head>
 
 <body>
@@ -17,59 +18,67 @@
             <!--Navigation buttons-->
             <div class="header-flex">
                 <div class="nav">
-                    <a class="nav" href="index.html">Home</a>
+                    <a class="nav" id="home" href="index.html">Home</a>
                 </div>
             </div>
             <div class="header-flex">
                 <div class="nav">
-                    <a class="nav" href="pages/about.html">About</a>
+                    <a class="nav" id="about" href="pages/about.html">About</a>
                 </div>
             </div>
             <div class="header-flex">
                 <div class="nav">
-                    <a class="nav" href="pages/store.html">Store</a>
+                    <a class="nav" id="store" href="pages/store.html">Store</a>
                 </div>
             </div>
             <div class="header-flex">
                 <div class="nav">
-                    <a class="nav" href="pages/tour.html">Tour</a>
+                    <a class="nav" id="tour" href="pages/tour.html">Tour</a>
                 </div>
+            </div>
+             <!--Hamburger menu-->
+             <div class="hamburgermenu" id="sitenav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="/FED_Assignment01/images/hamburger_icon.png" alt="Hamburger menu icon">
+                </a>
+                <a href="index.html" class="active">Home</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/store.html">Store</a>
+                <a href="pages/tour.html">Tour</a>
             </div>
             <!--Band logo-->
-            <div class="header-logo">
-                <div class="logo">
-                    <img src="/FED_Assignment01/images/logo.png" alt="My First Story band logo">
-                </div>
+            <div class="logo">
+                <h3><img id="headlogo" src="/FED_Assignment01/images/logo.png" alt="My First Story band logo"></h3>
             </div>
             <!--Images for social media link-->
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://www.youtube.com/c/MYFIRSTSTORYOfficialYouTubeChannel" target="_blank">
                         <img class="yt-icon" src="/FED_Assignment01/images/youtube.png" alt="Youtube icon">
                     </a>
                 </div>
             </div>
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://twitter.com/MyFirstStory_of" target="_blank">
                         <img class="x-icon" src="/FED_Assignment01/images/x_app.png" alt="X Social Media icon">
                     </a>
                 </div>
             </div>
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://www.instagram.com/myfirststoryofficial/" target="_blank">
                         <img class="insta-icon" src="/FED_Assignment01/images/instagram.png" alt="Instagram icon">
                     </a>   
                 </div>
             </div>
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://facebook.com/myfirststoryofficial/" target="_blank">
                         <img class="fb-icon" src="/FED_Assignment01/images/facebook.png" alt="Facebook icon">
                     </a>
                 </div>
-            </div>
+            </div>   
         </header>
         <!--Cover image-->
         <figure>

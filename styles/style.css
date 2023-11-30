@@ -1,7 +1,6 @@
 html, body{
     background-color:#222222;
     font-family: 'Barlow', sans-serif;
-    overflow-x: hidden;
 }
 
 .container {
@@ -34,13 +33,112 @@ html, body{
     color: #FFFFFF;
     font-size: 1.4rem;
 }
+/*Hamburger menu styling*/
+.hamburgermenu {    
+    background-color: #555555;
+    overflow: hidden;   
+    position: left;
+}
+
+.hamburgermenu a {
+    background-color: #555555;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    align-items: center;
+}
+
+.hamburgermenu img {
+    max-width: 30px;    
+}
+
+.hamburgermenu a:hover {
+    background-color: #777777;
+    color:rgb(190, 13, 13)
+}
+
+.hamburgermenu a.active {
+    background-color: rgb(190, 13, 13);
+}
+
+.hamburgermenu a.active:hover {
+    color: #FFFFFF;
+}
+
+.hamburgermenu .icon {
+    display: none;
+}
+
+/*Logo styling*/
+.logo {
+    display: flex;
+}
+
+@media (min-width: 995px) {
+    .hamburgermenu {
+        display: none;
+    }
+}
+@media (max-width: 994px){
+    .header-flex {
+        display: none;
+    }
+
+    .hamburgermenu {
+        display: flex;
+        flex-direction: column;
+        width: 16vw;
+        border: 2px solid;
+        height: auto;
+    }
+    .hamburgermenu img {
+        max-width: 30px;
+        flex-grow: 1;  
+    }
+    .hamburgermenu a:not(:first-child) {
+        display: none;
+    }
+    .hamburgermenu a.icon {
+        display: flex;
+    }
+    .hamburgermenu.responsive {
+        display: flex;
+        position: flex-end;
+        width: 16vw;
+    }
+    .hamburgermenu.responsive img {
+        max-width: 30px;
+        flex-grow: 1;
+    }
+    .hamburgermenu.responsive a.icon {
+        display: flex;
+        align-self: center;
+        width: 100%;
+    } 
+    .hamburgermenu.responsive a {
+        float: none;
+        display: flex;
+        text-align: right;
+        flex-grow: 1;   
+    }
+    .logo {
+        justify-content: right;
+    }
+    .logo img {
+        width: 40vw;
+        height: auto;   
+    }
+}
 /*Social link styling*/
 .header-social {
     display: flex;
-    justify-content: center;
-    flex-shrink: 2;
+    padding: 2%;
+    flex: 1;
+    flex-direction: row;
+    align-self: center;
     width: 2vw;
-    align-self: flex-end;
 }
 
 .yt-icon {
@@ -69,6 +167,16 @@ html, body{
     max-height: 4vw;
     justify-content: center;
 }
+
+@media (max-width: 994px) {
+    .header-social {
+        display: flex;
+    }
+    .fb-icon, .yt-icon, .insta-icon, .x-icon {
+        max-width: 7vw;
+        max-height: 7vh;
+    }
+}
 /*Group image styling*/
 figure {
     display: flex;
@@ -85,6 +193,13 @@ figure {
     display: flex;
     max-width: 100%;
     max-height: 150%;
+}
+
+@media (max-width: 994px) {
+    figure {
+        margin: 0% 0% 10% 0%;
+    }
+
 }
 /*Styling for news articles*/
 article {
@@ -103,6 +218,25 @@ article {
 .news-article {
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+@media (max-width: 994px) { 
+    .date {
+        font-size: 1.2rem;
+    }
+
+    .news-article {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 370px) { 
+    .date {
+        font-size: 1.2rem;
+    }
+
+    .news-article {
+        font-size: 0.9rem;
+    }
 }
 /*Styling for footer*/
 footer {
@@ -124,6 +258,15 @@ footer {
     font-size: 1.5rem;
     color: #FFFFFF;
     align-self: flex-end;
+}
+
+@media (max-width: 994px) {
+    .footer-logo {
+        max-width: 50%;
+    }
+    .footer-info {
+        font-size: 1rem;
+    }
 }
 /*Styling for about page*/
 .about-header {
@@ -154,6 +297,7 @@ footer {
 
 .about-flex {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
     flex: 1;
     border-left: 5px solid #555555;
@@ -164,28 +308,28 @@ footer {
 img.about-img {
     height: auto;
     flex-grow: 1;
-    width: 25px;
-}
-
-.about-label {
-    display: flex;
-    flex: 1;
     width: 100%;
-    height: 100%;
-    flex-direction: row;    
-    background-color: #777777;
 }
 
 .about-text {
     display: flex;
+    background-color: #777777;
     flex-grow: 1;
     flex-basis: 15%;
-    border: 4px solid #555555;
     justify-content: center;
 }
 
 .role {
     color: rgb(145, 23, 23);
+}
+
+@media (max-width: 994px) {
+    .about-container {
+        flex-direction: column;
+    }
+    .about-flex {
+        flex-direction: column;
+    }
 }
 /*Biography styling*/
 .biography {
@@ -230,40 +374,36 @@ img.about-img {
     display: flex;
     width: 100%;
     height: 100%;
+    margin-top: 5%;
     flex-direction: row;
 }
 
 .store-flex {
     display: flex;
-    flex-grow: 1;
+    flex-direction: column;
     flex: 1;
-    border-left: 5px solid #555555;
-    border-right: 2px solid #555555;
-    border-bottom: 5px solid #555555;
+    flex-basis: 21%;    
+    border: 4px solid #555555;
 }
 
 img.store-img {
-    height: auto;
-    flex-grow: 1;
-    width: 25px;
-}
-
-.store-label {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    height: 100%;
-    flex-direction: row;    
-    background-color: #777777;
+    max-width: 100%;
+    flex-grow: 1;  
 }
 
 .label-text {
+    background-color: #777777;
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 15%;
-    border: 4px solid #555555;
-    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+}
+
+@media (max-width: 994px){
+    .store-container {
+        flex-direction: column;
+        margin: 0%;
+    }    
 }
 
 /*Styling for tour page*/
@@ -329,4 +469,27 @@ img.store-img {
 
 .button {
     color: #FFFFFF;
+}
+
+@media (max-width: 994px) {
+    .tour-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .tour-flex {
+        flex-direction: column;
+    }
+
+    .tour-info {
+        align-self: center;
+        padding: 1%;
+        border-top: 2px solid rgb(190, 13, 13);
+        border-bottom: 2px solid rgb(190, 13, 13);
+    }
+
+    .tour-date, .buy-ticket {
+        border: none;
+    }
+
 }

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <script src="/FED_Assignment01/scripts/script.js"></script>
 </head>
 <body>
     <section class="container">
@@ -35,36 +36,44 @@
                     <a class="nav" href="tour.html">Tour</a>
                 </div>
             </div>
+            <!--Hamburger menu-->
+            <div class="hamburgermenu" id="sitenav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="/FED_Assignment01/images/hamburger_icon.png" alt="Hamburger menu icon">
+                </a>
+                <a href="/FED_Assignment01/index.html">Home</a>
+                <a href= "about.html" class="active">About</a>
+                <a href="store.html">Store</a>
+                <a href="tour.html">Tour</a>
+            </div>
             <!--Band Logo-->
-            <div class="header-logo">
-                <div class="logo">
-                    <img src="/FED_Assignment01/images/logo.png" alt="My First Story band logo">
-                </div>
+            <div class="logo">
+                <h3><img src="/FED_Assignment01/images/logo.png" alt="My First Story band logo"></h3>
             </div>
             <!--Images for social media link-->
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://www.youtube.com/c/MYFIRSTSTORYOfficialYouTubeChannel" target="_blank">
                         <img class="yt-icon" src="/FED_Assignment01/images/youtube.png" alt="Youtube icon">
                     </a>
                 </div>
             </div>
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://twitter.com/MyFirstStory_of" target="_blank">
                         <img class="x-icon" src="/FED_Assignment01/images/x_app.png" alt="X Social Media icon">
                     </a>
                 </div>
             </div>
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://www.instagram.com/myfirststoryofficial/" target="_blank">
                         <img class="insta-icon" src="/FED_Assignment01/images/instagram.png" alt="Instagram icon">
                     </a>   
                 </div>
             </div>
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://facebook.com/myfirststoryofficial/" target="_blank">
                         <img class="fb-icon" src="/FED_Assignment01/images/facebook.png" alt="Facebook icon">
                     </a>
@@ -81,34 +90,31 @@
         <section class="about-container">
             <div class="about-flex">
                 <img class="about-img" src="/FED_Assignment01/images/hiro_about.jpg" alt="Image of Vocalist, Hiro">
+                <div class="about-text">
+                    <h2>Nob/</h2>
+                    <h2 class="role">Bassist</h2>
+                </div>
             </div>
             <div class="about-flex">
                 <img class="about-img" src="/FED_Assignment01/images/kidz_about.jpg" alt="Image of Drummer, Kid'z">
+                <div class="about-text">
+                    <h2>Hiro/</h2>
+                    <h2 class="role">Vocalist</h2>
+                </div>
             </div>
             <div class="about-flex">
                 <img class="about-img" src="/FED_Assignment01/images/teru_about.jpg" alt="Image of Guitarist, Teru">
+                <div class="about-text">
+                    <h2>Kid'z/</h2>
+                    <h2 class="role">Drummer</h2>
+                </div>
             </div>
             <div class="about-flex">
                 <img class="about-img" src="/FED_Assignment01/images/nob_about.jpg" alt="Image of Bassist, Nob">
-            </div>
-        </section>
-        <!--Labels for band member images-->
-        <section class="about-label">
-            <div class="about-text">
-                <h2>Hiro/</h2>
-                <h2 class="role">Vocalist</h2>
-            </div>
-            <div class="about-text">
-                <h2>Kid'z/</h2>
-                <h2 class="role">Drummer</h2>
-            </div>
-            <div class="about-text">
-                <h2>Teru/</h2>
-                <h2 class="role">Guitarist</h2>
-            </div>
-            <div class="about-text">
-                <h2>Nob/</h2>
-                <h2 class="role">Bassist</h2>
+                <div class="about-text">
+                    <h2>Teru/</h2>
+                    <h2 class="role">Guitarist</h2>
+                </div>
             </div>
         </section>
         <!--Biography container and text-->

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <script src="/FED_Assignment01/scripts/script.js"></script>
 </head>
 <body>
     <section class="container">
@@ -35,36 +36,44 @@
                     <a class="nav" href="tour.html">Tour</a>
                 </div>
             </div>
+            <!--Hamburger menu-->
+            <div class="hamburgermenu" id="sitenav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="/FED_Assignment01/images/hamburger_icon.png" alt="Hamburger menu icon">
+                </a>
+                <a href="/FED_Assignment01/index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="store.html" class="active">Store</a>
+                <a href="tour.html">Tour</a>
+            </div>
             <!--Band Logo-->
-            <div class="header-logo">
-                <div class="logo">
-                    <img src="/FED_Assignment01/images/logo.png" alt="My First Story band logo">
-                </div>
+            <div class="logo">
+                <h3><img src="/FED_Assignment01/images/logo.png" alt="My First Story band logo"></h3>
             </div>
             <!--Images for social media link-->
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://www.youtube.com/c/MYFIRSTSTORYOfficialYouTubeChannel" target="_blank">
                         <img class="yt-icon" src="/FED_Assignment01/images/youtube.png" alt="Youtube icon">
                     </a>
                 </div>
             </div>
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://twitter.com/MyFirstStory_of" target="_blank">
                         <img class="x-icon" src="/FED_Assignment01/images/x_app.png" alt="X Social Media icon">
                     </a>
                 </div>
             </div>
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://www.instagram.com/myfirststoryofficial/" target="_blank">
                         <img class="insta-icon" src="/FED_Assignment01/images/instagram.png" alt="Instagram icon">
                     </a>   
                 </div>
             </div>
-            <div class="header-flex">
-                <div class="header-social">
+            <div class="header-social">
+                <div class="social-link">
                     <a href="https://facebook.com/myfirststoryofficial/" target="_blank">
                         <img class="fb-icon" src="/FED_Assignment01/images/facebook.png" alt="Facebook icon">
                     </a>
@@ -81,74 +90,60 @@
         <section class="store-container">
             <div class="store-flex">
                 <img class="store-img" src="/FED_Assignment01/images/album_myfirststory.jpg" alt="Image of album 'My First Story'">
+                <div class="label-text">
+                    <h2>MY FIRST STORY<br>¥2095</h2>
+                </div>
             </div>
             <div class="store-flex">
                 <img class="store-img" src="/FED_Assignment01/images/album_antithese.jpg" alt="Image of album, Antithese">
+                <div class="label-text">
+                    <h2>ANTITHESE<br>¥3500</h2>
+                </div>
             </div>
             <div class="store-flex">
-                <img class="store-img" src="/FED_Assignment01/images/album_thepremiumsymphony.jpg" alt="Image of album, The Premium Symphony">
+                <img class="store-img" src="/FED_Assignment01/images/album_sss.jpg" alt="Image of album, SSS">
+                <div class="label-text">
+                    <h2>S•S•S<br>¥3500</h2>
+                </div>
             </div>
             <div class="store-flex">
                 <img class="store-img" src="/FED_Assignment01/images/album_x.png" alt="Image of album, X">
-            </div>
-        </section>
-        <!--Labels for store items-->
-        <section class="store-label">
-            <div class="label-text">
-                <h2>MY FIRST STORY</h2>
-                <h2>¥2095</h2>
-            </div>
-            <div class="label-text">
-                <h2>ANTITHESE</h2>
-                <h2>¥3500</h2>
-            </div>
-            <div class="label-text">
-                <h2>THE PREMIUM SYMPHONY</h2>
-                <h2>¥3500</h2>
-            </div>
-            <div class="label-text">
-                <h2>X</h2>
-                <h2>¥3500</h2>
+                <div class="label-text">
+                    <h2>X<br>¥3500</h2>
+                </div>
             </div>
         </section>
         <!--Container for second row for store items-->
         <section class="store-container">
             <div class="store-flex">
                 <img class="store-img" src="/FED_Assignment01/images/mfs_champion_shirt.jpg" alt="T-Shirt with band initials 'MFS'">
+                <div class="label-text">
+                    <h2>MFS CHAMPION T-Shirt<br>¥7000</h2>
+                </div>
             </div>
             <div class="store-flex">
                 <img class="store-img" src="/FED_Assignment01/images/mfs_logo_hood.jpg" alt="Hoodie with My First Story logo">
+                <div class="label-text">
+                    <h2>MFS Logo Hoodie<br>¥8500</h2>
+                </div>
             </div>
             <div class="store-flex">
                 <img class="store-img" src="/FED_Assignment01/images/mfs_pouch.jpg" alt="Image of pouch with My First Story logo">
+                <div class="label-text">
+                    <h2>MFS MA-1 Pouch<br>¥3500</h2>
+                </div>
             </div>
             <div class="store-flex">
                 <img class="store-img" src="/FED_Assignment01/images/mfs_tote_domever.jpg" alt="Image of tote bag with My First Story logo">
-            </div>
-        </section>
-        <!--Labels for store items-->
-        <section class="store-label">
-            <div class="label-text">
-                <h2>MFS CHAMPION T-Shirt</h2>
-                <h2>¥7000</h2>
-            </div>
-            <div class="label-text">
-                <h2>MFS Logo Hoodie</h2>
-                <h2>¥8500</h2>
-            </div>
-            <div class="label-text">
-                <h2>MFS MA-1 Pouch</h2>
-                <h2>¥3500</h2>
-            </div>
-            <div class="label-text">
-                <h2>MFS Tote Bag (Dome Ver.)</h2>
-                <h2>¥3500</h2>
+                <div class="label-text">
+                    <h2>MFS Tote Bag<br>¥3500</h2>
+                </div>
             </div>
         </section>
     </section>
 
     <footer>
-        <img class="footer-logo" src="/FED_Assignment01/images/logo.png">
+        <img class="footer-logo" src="/FED_Assignment01/images/logo.png" alt="My First Story band logo">
         <div class="footer-info">
             My First Story Site, 2023
         </div>
