@@ -296,29 +296,35 @@ img.store-img {
 
 .tour-flex {
     background-color: #777777;
+    color: #FFFFFF;
     display: flex;
-    padding: 3%;
+    padding: 2%;
     flex: 1;
-    font-size: 2rem;
+    font-size: 1.6rem;
     border-left: 5px solid #555555;
     border-right: 2px solid #555555;
     border-bottom: 5px solid #555555;
+    align-items: center;
 }
 
 .tour-date {
     display: flex;
     flex: 1;
-    border: 2px solid red;
+    justify-content: center;
+    border-right: 2px solid rgb(190, 13, 13);
+    
 }
 
 .tour-info {
     display: flex;
+    font-size: 1.2rem;
     flex: 2;
-    border: 2px solid red;
+    justify-content: center;
 }
 
 .buy-ticket {
     display: flex;
     flex: 1;
-    border: 2px solid red;
+    justify-content: center;
+    border-left: 2px solid rgb(190, 13, 13);
 }
