@@ -15,7 +15,7 @@ User Stories
 
 Wireframe
 ---------
-[Wireframe](FED_S10257799G_Giam_Jun_Xian_Clive_Assg1_wireframe.xd)
+[Wireframe](/Wireframe/FED_S10257799G_Giam_Jun_Xian_Clive_Assg1_wireframe.xd)
 
 Features
 -----------------
