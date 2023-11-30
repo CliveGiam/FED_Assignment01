@@ -5,7 +5,7 @@ body{
 
 .container {
     display: flex;
-    width: 100%;
+    width: 100vw; /*768x1024 width:110vw;*/
     flex-wrap: wrap;
     flex-direction: column;
 }
@@ -24,7 +24,6 @@ body{
     display: flex;
     padding: 2%;
     flex: 1;
-    flex-grow: 1;
     flex-direction: row;
     align-self: center;
     width: 2vw;
@@ -125,6 +124,26 @@ footer {
     align-self: flex-end;
 }
 /*Styling for about page*/
+.about-header {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.abouthead-text {
+    background-color: #777777;
+    color: #FFFFFF;
+    display: flex;
+    flex-grow: 1;
+    flex: 1;
+    font-size: 2rem;
+    justify-content: center;
+    border-left: 5px solid #555555;
+    border-right: 2px solid #555555;
+    border-bottom: 5px solid #555555;
+}
 .about-container {
     display: flex;
     width: 100%;
@@ -156,7 +175,7 @@ img.about-img {
     background-color: #777777;
 }
 
-.label-text {
+.about-text {
     display: flex;
     flex-grow: 1;
     flex-basis: 15%;
@@ -180,11 +199,32 @@ img.about-img {
 }
 
 .bio-text {
+    color: #FFFFFF;
     margin-top: 0%;
     font-size: 1.3rem;
     font-weight: bold;
 }
 /*Styling for store items*/
+.store-header {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.storehead-text {
+    background-color: #777777;
+    color: #FFFFFF;
+    display: flex;
+    flex-grow: 1;
+    flex: 1;
+    font-size: 2rem;
+    justify-content: center;
+    border-left: 5px solid #555555;
+    border-right: 2px solid #555555;
+    border-bottom: 5px solid #555555;
+}
 .store-container {
     display: flex;
     width: 100%;
@@ -223,5 +263,27 @@ img.store-img {
     flex-basis: 15%;
     border: 4px solid #555555;
     align-items: center;
+}
+
+/*Styling for tour page*/
+.tour-header {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.tourhead-text {
+    background-color: #777777;
+    color: #FFFFFF;
+    display: flex;
+    flex-grow: 1;
+    flex: 1;
+    font-size: 2rem;
+    justify-content: center;
+    border-left: 5px solid #555555;
+    border-right: 2px solid #555555;
+    border-bottom: 5px solid #555555;
 }
 
