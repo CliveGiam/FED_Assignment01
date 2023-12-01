@@ -33,6 +33,16 @@ Technologies used
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): This project uses CSS to apply the desired 
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): This project uses Javascript to add additional functionality e.g. hamburger menu
 
+Testing
+-------
+Mobile (Max screen width: 994px)
+- Size displays images in column format
+- Navigation bar swapped to hamburger menu
+- Elements retain a certain size when swapping to mobile
+
+Desktop
+- Elements scale accurately when increasing and decreasing window size
+
 Credits
 -------
 Content
