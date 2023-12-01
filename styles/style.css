@@ -28,6 +28,12 @@ html, body{
     align-self: center;
     width: 2vw;
 }
+.header-flex a:hover {
+    background-color: #777777;
+}
+.header-flex #current {
+    color:rgb(190, 13, 13);
+}
 /*Navigation link styling*/
 .nav {
     color: #FFFFFF;
@@ -120,7 +126,7 @@ html, body{
     .hamburgermenu.responsive a {
         float: none;
         display: flex;
-        text-align: right;
+        text-align: left;
         flex-grow: 1;   
     }
     .logo {
