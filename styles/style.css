@@ -43,7 +43,6 @@ html, body{
 .hamburgermenu {    
     background-color: #555555;
     overflow: hidden;   
-    position: left;
 }
 
 .hamburgermenu a {
@@ -111,7 +110,6 @@ html, body{
     }
     .hamburgermenu.responsive {
         display: flex;
-        position: flex-end;
         width: 16vw;
     }
     .hamburgermenu.responsive img {
